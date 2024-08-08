@@ -1,0 +1,23 @@
+body{
+    background-image: url('../images/Login\ page.png');
+    background-size: cover;
+}
+img{
+    width: 40vW;
+   margin-top: 106px;
+}
+h3{
+   
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    padding:15px;
+    color: #3DB2CC;
+}
+p{
+    font-size: 40px;
+    font-family: italic;
+    padding: 30px;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    color: #2ee1e7;
+}

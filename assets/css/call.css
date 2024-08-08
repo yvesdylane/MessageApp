@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling on the body */
     margin: 0; /* Remove default margin */
+    background-color: whitesmoke;
 }
 
 .container {
@@ -10,10 +11,64 @@ body {
 }
 
 .head {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #3DB2CC;
 }
+h1{
+  color: azure;
+}
+#h3{
+  color: #3DB2CC;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  background-color: azure;
+  border-radius: 1rem;
+  margin-top: 0.7rem;
+}
+
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search--box {
+   background: azure;
+   border-radius: 15px;
+   color: rgba(113, 99, 186, 255);
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   padding: 4px 12px;
+   border: solid #3DB2CC 1px;
+   margin-left: 1.5rem;
+   width: 80%;
+   margin-top: 0.1rem;
+}
+.search--box input {
+   background: rgba(128, 128, 128, 0.192);
+   border-radius: 0.8rem;
+   width: 100%;
+   padding: 10px;
+   border: solid 1px #2ee1e7;
+}
+.search--box img {
+ width: 30px;
+ cursor: pointer;
+ transition: all 0.5s ease-out;
+}
+.search--box i:hover {
+ transform: scale(1.2);
+}
+
 
 .favorites {
     width: 100%;
@@ -52,10 +107,16 @@ body {
 .contact::-webkit-scrollbar {
     display: none;
 }
+.button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
 
 .contact {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    border-bottom: solid rgba(0, 0, 0, 0.205) 1px;
 }
 
 .call {
@@ -63,7 +124,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0;
   }
   
@@ -170,4 +232,7 @@ span{
     position: relative;
     font-size: 24px;
     color: white;
+}
+button{
+  font-size: 16px;
 }
