@@ -1,0 +1,173 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on the body */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.favorites {
+    width: 100%;
+}
+
+.favorites h3 {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.fav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.fav img {
+    border-radius: 50%;
+    border: dotted #3DCCBA;
+}
+
+.fav p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Hide scrollbar */
+.contact::-webkit-scrollbar {
+    display: none;
+}
+
+.contact {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .user-image {
+    /* Add your image styling here */
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+  }
+  .user-image img{
+    margin: 0;
+  }
+  
+  .info {
+    display: flex;
+  }
+  .info p{
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .missed-call {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .name {
+    font-weight: bold;
+  }
+  
+  .time {
+    font-size: 14px;
+    color: #888;
+  }
+  .time-day{
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .view{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .my_calls[active="false"]{
+    display: none;
+  }
+
+.recive_calls[active="false"]{
+    display: none;
+  }
+
+  .my-button {
+    margin-left: 1rem;
+    background-color: azure;
+    color: #87CEFA;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: azure 0.3s ease-in-out;
+  }
+  
+  .my-button.active {
+    background-color: #3DB2CC;
+    color: azure;
+  }
+
+  /* footer style */
+  
+.footer{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #3DB2CC;
+}
+.foot{
+    width: 50px;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.foot.active{
+    width: auto;
+    padding-left: 0.6rem;
+    padding-right: 0.8rem;
+    box-sizing: border-box;
+    background-color: #2ee1e7;
+    border-radius: 2rem;
+    border: none;
+}
+span{
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
+    position: relative;
+    font-size: 24px;
+    color: white;
+}
